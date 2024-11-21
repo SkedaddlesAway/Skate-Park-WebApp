@@ -1,3 +1,5 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -52,53 +54,25 @@ body {
 .nav ul li:hover:after {
   width: 100%;
 }
-.content {
+
+/* Page Heading */
+.pageTitle {
   width: 100%;
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
+  transform: translateY(-80%);
   text-align: center;
   color: #fff;
 }
-
-.content h1 {
+.pageTitle header {
+  font-family: 'Shrikhand', serif;
+  font-weight: 400;
+  font-style: normal;
   font-size: 70px;
-  margin-top: 80px;
+  /* margin-top: 250px; */
+  text-decoration: underline;
 }
 
-h2 {
-  text-align: center;
-  font-size: 45px;
-}
-.content p {
-  margin: 20px auto;
-  font-weight: 100;
-  line-height: 25px;
-}
-p {
-  margin: 15px;
-}
-.spacer {
-  text-align: center;
-  font-family: "Times New Roman", Times, serif;
-}
-
-.hamburger {
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-  display: none;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 30px;
-  height: 21px;
-}
-.hamburger .bar {
-  height: 3px;
-  width: 100%;
-  background-color: #fff;
-  border-radius: 10px;
-}
 .grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -115,10 +89,7 @@ footer {
 }
 
 @media (max-width: 900px) {
-  .hamburger {
-    display: flex;
-    padding: 35px;
-  }
+
   .nav {
     flex-direction: column;
     align-items: flex-start;
