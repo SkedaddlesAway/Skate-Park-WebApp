@@ -1,5 +1,14 @@
+/* Color Scheme
+ * Dark Brown: #794a34
+ * Red: #dd5341
+ * Peach: #f57f5b
+ * daffodil: #faca78
+ * teal: #68c7c1  
+ * cream: #f5eace 
+ */
 
 @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -8,16 +17,22 @@
 body {
   background-color: black;
   color: #fff;
+  overflow: scroll;
 }
 
+/* ------------ Universal Styles------------ */
 .banner {
   width: 100%;
   height: 80vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(../images/pexels-zachtheshoota-1769553.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/pexels-zachtheshoota-1769553.jpg);
   background-size: cover;
   background-position: center;
 }
+.logo {
+  width: 135px;
+  cursor: pointer;
+}
+
 .nav {
   width: 85%;
   margin: auto;
@@ -25,10 +40,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-.logo {
-  width: 135px;
-  cursor: pointer;
 }
 .nav ul li {
   list-style: none;
@@ -73,6 +84,22 @@ body {
   text-decoration: underline;
 }
 
+/* Body Content */
+.content{
+  background: #f5eace;
+  margin: 0px 50px 0px 50px;
+  padding: 20px;
+}
+
+/* Footer */
+footer {
+  background-color: rgb(229, 140, 72);
+  color: white;
+  height: 10vh;
+}
+
+/* ------------ End of Universal Styles ------------ */
+
 .grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -81,15 +108,20 @@ body {
   align-items: center;
 }
 
-footer {
-  text-align: center;
-  padding: 3px;
-  background-color: rgb(229, 140, 72);
-  color: white;
-}
+/* ---------- Index/Home ------------ */
 
+/* ------------ About ------------ */
+
+/* ------------ Event ------------ */
+
+
+/* ----------- Gallery ------------ */
+
+/* ----------- Sponsors ------------ */
+
+
+/* ------------ Responsive Section ------------ */
 @media (max-width: 900px) {
-
   .nav {
     flex-direction: column;
     align-items: flex-start;
