@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GoGo's Skate Park</title>
     <link rel="stylesheet" href="css/style.css" />
-    <script async src="js/script.js"></script>
     <code><script src="https://unpkg.com/vue@3"></script></code>
   </head>
   <body>
@@ -51,8 +50,10 @@
       <section>
         <h1 class="sectionTitle">Gallery Photos</h1>
         <div class="imgScroll">
-          <img v-for="(gallery, index) in gallery" :key="index" src= "{{gallery.image.path}}" />
+          <img v-for="gallery in gallery" :src= gallery.image.path />
         </div>
+
+
         <div class="sectionEnd">
           <hr class="solid" />
           <a href="gallery.html"><button class="buttons">View All</button></a>
@@ -88,7 +89,7 @@
             <div class="overlay">
               <div class="items"></div>
               <div class="items head">
-                <p>Safe Wheels Workshop</p>
+                <p>Monthly Skate Jam</p>
                 <hr />
               </div>
               <div>
@@ -114,7 +115,6 @@
             </div>
           </div>
 
-          <!-- single item -->
           <div
             class="eventContainer"
             style="background-image: url(images/pexels-felicity-tai-7951909.jpg)"
@@ -158,8 +158,6 @@
               </div>
             </div>
           </div>
-
-          
 
           <!-- single item -->
           <div class="eventContainer" style="background-image: url(images/BonesBearings.png)">
@@ -213,10 +211,116 @@
       </section>
     </div>
     <footer>
-      <div class="logo">
-        <a href="index.html"><img class="logo" src="images/Art/logogo-txt-white.png"/></a>
+      <div class="content">
+        <div class="logo">
+          <a href="index.html"><img class="logo" src="images/Art/logogo-txt-white.png"/></a>
+        </div>
+        <p>Connect with Us!</p>
       </div>
-      <p>Connect with Us!</p>
     </footer>
   </body>
-</html>
+<script>
+  
+let app = Vue.createApp({
+  data() {
+    return {
+      activePage: 0,
+      pages: [
+        {
+          link: { text: "Home", url: "index.html" }
+        },
+        {
+          link: { text: "About", url: "about.html" }
+        },
+        {
+          link: { text: "Events", url: "events.html" }
+        },
+        {
+          link: { text: "Gallery", url: "gallery.html" }
+        },
+        {
+          link: { text: "Our Sponsors", url: "sponsors.html" }
+          
+        },
+      ],
+
+      gallery:[
+        {
+          image: { path: "images/Art/aravil-apples.png", alt:" "}
+        },
+        {
+          image: { path: "images/Art/GOGO GRAFFITI.png", alt:" "}
+        },
+        {
+          image: { path: "images/Art/logogo-lineart.png", alt:" "}
+        },
+        {
+          image: { path: "images/Art/gogolittleones.png", alt:" "}
+        },
+        {
+          image: { path: "images/Art/gogoxsol-poster.png", alt:" "}
+        },
+        {
+          image: { path: "images/Art/cehui-fish.png", alt:" "}
+        },
+        {
+          image: { path: "images/Art/office.png ", alt:" "}
+        },
+        {
+          image: { path: "images/Art/merchshop.png", alt:" "}
+        },
+        {
+          image: { path: " images/Art/gogoslow.png", alt:" "}
+        },
+        {
+          image: { path: "images/Art/entrance.png", alt:" "}
+        },
+        {
+          image: { path: "images/Art/safety.png", alt:" "}
+        },
+        {
+          image: { path: "images/Art/visitorcenter.png", alt:" "}
+        },
+        {
+          image: { path: "images/Art/winslow-icecream.png", alt:" "}
+        },      
+      ],
+
+      events:[
+        {
+          card: { img: "images/pexels-koprivakart-3315961.jpg", head: "Beginner Skateboarding Camp", desc: "[EVENT DESCRIPTION]"}
+        },
+        {
+          card: { img: "images/pexels-cottonbro-10131805.jpg", head: "", desc: "[EVENT DESCRIPTION]"}
+        },
+        {
+          card: { img: "images/pexels-greg-melow-414051575-15026027.jpg", head: "", desc: "[EVENT DESCRIPTION]"}
+        },
+        {
+          card: { img: "images/pexels-felicity-tai-7951909.jpg", head: "", desc: "[EVENT DESCRIPTION]"}
+        },
+        {
+          card: { img: "images/Art/gogoxsol-poster.png", head: "", desc: "[EVENT DESCRIPTION]"}
+        },
+        {
+          card: { img: "images/BonesBearings.png", head: "", desc: "[EVENT DESCRIPTION]"}
+        },
+        {
+          card: { img: "images/Orangatang.png", head: "", desc: "[EVENT DESCRIPTION]"}
+        },
+        {
+          card: { img: "images/Art/DGK.png", head: "DGK Skating Essentials", desc: "[EVENT DESCRIPTION]"}
+        },        
+      ],
+
+    };
+  },
+
+});
+
+  app.mount("body");
+</script>
+
+  </html>
+
+
