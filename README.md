@@ -2,78 +2,15 @@
 A solo implementation of an IPRO project, modified to fit a different prompt
 
 # Project overview
-
+    This website was made with the intention of being the online presence of a digitally smart skate park as part of an IPRO course at IIT.The purpose of the GoGo Skate Park website is to communicate with the community that visits the park and to encourage learning. The project features art, engineering graphs, and design input from my teammates throughout the site. 
+  
 # Technologies used
+    Vue JS is seen throughout the project, though not in the typical Single Page Application (SPA). Filtering can be seen in the gallery page and a fun card feature pops up around several pages of the project. 
 
 # Lessons Learned
+    The biggest lesson is that while Vue is interesting, it can be difficult. It would also help to start from scratch and not shove it into an existing project with multiple pages. New CSS styles and shortcuts were also learned in the process. 
 
 # Future scope
+    This, interestingly enough, is the future implementation of the project. The original files weren't as complex and were meant to be used with react, but the final product wasn't up to my standards. I was happy enough to leave it be, but then Team GoGo (my IPRO team) won innovation day at Kaplan Inst. and was even invited to present at Chi Con. So the site was ripped apart and redone in the last weeks of November. 
 
-
-# Project Requirements:
-
-   ## Framework Selection:
-        Must use one of the following frameworks: React, Angular, or Vue.js.
-        Provide a brief overview of your choice and Justify your choice based on project requirements and other reasons.
-
-   ## Agile Methodology:
-        Create an Agile board on a platform like Jira, Azure DevOps, or GitHub Projects.
-        Define clear Epics, Features, and User Stories to guide your development process.
-
-   ## Source Code Management:
-        Host your project's source code on GitHub.
-        Ensure the repository is public and accessible for review.
-
-   ## CI/CD Pipeline:
-        Implement a GitHub Action to automate the deployment process.
-        Deploy your application to a cloud platform of your choice (e.g., Azure, AWS, Netlify, Vercel, Heroku ).
-
-   ## Web Application Features:
-        Landing Page:
-            Create a visually appealing landing page with semantic HTML elements.
-            Include a compelling introduction to your project, incorporating text and narration.
-        Routing and Navigation:
-            Implement robust routing and navigation to guide users through the application.
-            Ensure smooth transitions between different pages.
-        Storytelling:
-            Develop an engaging story that has a clear purpose.
-            Consider themes like community engagement, personal branding (dynamic resume), or marketing.
-        Data Handling and Filtering:
-            Utilize data structures (Json with Schema) to store and manage information.
-            Implement filtering and search capabilities to allow users to find specific content.
-        Styling and Presentation:
-            Employ CSS or a CSS-in-JS library to style your application.
-            Prioritize a visually pleasing and user-friendly design.
-
-   ## Best Practices:
-        Adhere to frontend development best practices, including:
-            Component-based architecture
-            State management (e.g., Redux, Context API, Vuex)
-            Testing (unit, integration, end-to-end)
-            Accessibility (WCAG 2.1)
-            Performance optimization
-
-# Submission:
-
-    Prepare to present on the final week - December 5th. (2 sessions 3 to 5 and 5:15 to 7:30)5 minutes presentation - Overview, Source Control - Web site, Technology Highlights, Lessons Learned
-    GitHub Repository:
-        Share the link to your public GitHub repository.
-    Deployment Link:
-        Provide the URL of your deployed web application.
-    Project Documentation:
-        Create a README file in your repository to explain:
-            Project overview
-            Technologies used
-            Lessons Learned
-            Future scope
-
-# Evaluation Criteria:
-
-Your project will be evaluated based on the following criteria:
-
-    Functionality: Does the application meet all the requirements and work as expected?
-    User Experience: Is the application user-friendly, visually appealing, and easy to navigate?
-    Code Quality: Is the code clean, well-structured, and maintainable?
-    Agile Methodology: Is the project well-organized and managed using Agile principles?
-    CI/CD Pipeline: Is the deployment process automated and reliable?
-    Creativity and Innovation: Does the project demonstrate originality and a unique approach?
+    Future improvements might include another full redo, starting from the ground up with a fresh vue application and seeing how far I can get with an SPA 
