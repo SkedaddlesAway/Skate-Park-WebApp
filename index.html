@@ -51,19 +51,7 @@
       <section>
         <h1 class="sectionTitle">Gallery Photos</h1>
         <div class="imgScroll">
-          <img src="images/Art/aravil-apples.png" alt="alt 1" />
-          <img src="images/Art/GOGO GRAFFITI.png" alt="alt 2" />
-          <img src="images/Art/logogo-lineart.png" alt="alt 3" />
-          <img src="images/Art/gogolittleones.png" alt="alt 3" />
-          <img src="images/Art/gogoxsol-poster.png" alt="alt 3" />
-          <img src="images/Art/cehui-fish.png" alt="alt 3" />
-          <img src="images/Art/office.png" alt="alt 3" />
-          <img src="images/Art/merchshop.png" alt="alt 3" />
-          <img src="images/Art/gogoslow.png" alt="alt 3" />
-          <img src="images/Art/entrance.png" alt="alt 3" />
-          <img src="images/Art/safety.png" alt="alt 3" />
-          <img src="images/Art/visitorcenter.png" alt="alt 3" />
-          <img src="images/Art/winslow-icecream.png" alt="alt 3" />
+          <img v-for="(gallery, index) in gallery" :key="index" src= "{{gallery.image.path}}" />
         </div>
         <div class="sectionEnd">
           <hr class="solid" />
@@ -225,6 +213,9 @@
       </section>
     </div>
     <footer>
+      <div class="logo">
+        <a href="index.html"><img class="logo" src="images/Art/logogo-txt-white.png"/></a>
+      </div>
       <p>Connect with Us!</p>
     </footer>
   </body>

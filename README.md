@@ -1,6 +1,16 @@
 # Skate-Park-WebApp
 A solo implementation of an IPRO project, modified to fit a different prompt
-# Requirements:
+
+# Project overview
+
+# Technologies used
+
+# Lessons Learned
+
+# Future scope
+
+
+# Project Requirements:
 
    ## Framework Selection:
         Must use one of the following frameworks: React, Angular, or Vue.js.
