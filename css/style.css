@@ -208,15 +208,15 @@ footer {
 .infoCard{
   margin: auto auto;
   width: 60vw;
-  padding: 1.25rem;
+  padding: 1rem;
 }
 
 .infoCard p{
   font-size: 1.2rem;
-  padding: 1rem 0;
+  padding: .75rem 0;
 }
 .infoCard h2{
-  padding-bottom: 1rem;
+  padding-bottom: .5rem;
   font-family: 'Shrikhand', serif;
   font-size:2vw;
   text-align: center;
@@ -273,7 +273,7 @@ footer {
   line-height: 30px;
   
   transform: translateY(40px);
-  transition: all 0.7s;
+  transition: all 0.3s;
   hr {
     display: block;
     width: 0;
@@ -282,19 +282,19 @@ footer {
     border-bottom: solid 2px #f5eace;
     
     position: relative;
-    bottom: 0; left:20px;
+    bottom: 0; left:10px;
     
-    transition: all .5s;
+    transition: all .3s;
   }
 }
 
 .desc{
   font-size: 1em;
-  line-height: 10px;
+  line-height: 1.2rem;
   opacity: 0;
   transform: translateY(40px);
   transition: all 0.7s;
-  padding-left: 20px;
+  padding-left: 10px;
 }
 
 .eventContainer:hover .overlay {
