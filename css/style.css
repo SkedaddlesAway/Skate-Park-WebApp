@@ -17,7 +17,7 @@
 body {
   background-color: #f5eace;
   color: #000;
-  font-size: 1em;
+  font-size: 16px;
   line-height: 1.35;
 }
 
@@ -52,6 +52,9 @@ body {
   text-decoration: none;
   color: #fff;
   text-transform: uppercase;
+}
+.navbar .active {
+  color: #dd5341;
 }
 .nav ul li::after {
   content: "";
@@ -112,7 +115,28 @@ footer {
 }
 
 /* ---------- Index/Home ------------ */
-
+.intro{
+  display: flex;
+  width: 100%;
+}
+#landing p{
+  font-size: 1.2rem;
+  padding: 1rem 0;
+}
+#landing img{
+  max-width: 100%;
+  height: 30%;
+}
+#HoS ul{
+  margin-bottom: 2rem ;
+  background-color: #67c3b3;
+  color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  list-style: none;
+  text-align: center;
+  line-height: 1.5;
+}
 .imgScroll{
   display: inline-flex;
   flex-flow: row nowrap;
@@ -151,8 +175,9 @@ footer {
   margin-top: 2.5rem;
 }
 .sectionEnd hr{
-  width: 100%;
-  border: 2px solid #dd5341;
+  margin: auto;
+  width: 75%;
+  border: 1.5px solid rgb(221, 83, 65, 0.7);
 }
 .buttons{
   border-radius: 5px;
@@ -212,9 +237,8 @@ footer {
 
 /* Cards */
 .eventGrid{
-  display: inline-flex;  
+  display: flex;  
   gap: 1rem;
-
 }
 
 .eventContainer {

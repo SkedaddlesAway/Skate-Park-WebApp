@@ -36,20 +36,35 @@
 
     <div class="content">
       <!-- Introduction -->
-      <section>
-        <div class="infoCard">
+      <section class="intro">
+        <div class="infoCard" id="landing">
           <h2>A place to GoGo to your dreams!</h2>
           <p>
-            Who are we? We're the best skate park you've ever seen.</p> 
-            <p>Packed with smart technologies and artistiv freedom, 
-            GoGo's skatepark takes skating to the next level. 
+            Who are we? We're the best skate park you've ever seen. Packed with smart technologies and artistic freedom, 
+            GoGo's skatepark takes skating to the next level. Classes are open to all skill levels and you don't 
+            even need to own a board to start.
+            Skating doesn't have to be scary or expensive.   
           </p>
+          <img id="entrance-img" src="images/Art/entrance.png" alt="A drawing of a skateboarding bugbear with a teal hawaiian shirt and board shirts. Underneath reads 'GoGo's Skate Park '">
         </div>
-        <ul class="HoS">
-          <li><strong>GoGo's Hours</strong></li>
-          <li>Mondays - Fridays 9 a.m. to 7 p.m.</li>
-          <li>Saturdays and Sundays 8 a.m. to 8 p.m.</li>
-        </ul>
+        <div id="HoS">
+          <ul>
+            <li><strong>GoGo's Hours</strong></li>
+            <hr/>
+            <li>Mondays - Fridays:  9 a.m. to 7 p.m.</li>
+            <li>Saturdays - Sundays: 8 a.m. to 8 p.m.</li>
+            <li style="color: black;"><i>Hours subject to change due to weather!</i></li>
+          </ul>
+          <ul>
+            <li><strong>Announcements</strong></li>
+            <hr/>
+            <li>Little One's Showcase next month!</li>
+            <li>Special deals on GoGo helmets 12/10 - 12/20</li>
+            <li>Summer camp counselor positions now open!</li>
+            <li></li>
+          </ul>
+          <!-- VUE LOGIN??? -->
+        </div>
       </section>
 
       <!-- Gallery Blurb -->
@@ -120,7 +135,7 @@
               </div>
             </div>
           </div>
-
+          <!-- single item -->
           <div
             class="eventContainer"
             style="background-image: url(images/pexels-felicity-tai-7951909.jpg)"
@@ -225,6 +240,7 @@
       </div>
     </footer>
   </body>
+
 <script>
   
 let app = Vue.createApp({
@@ -326,7 +342,6 @@ let app = Vue.createApp({
 
   app.mount("body");
 </script>
-
-  </html>
+</html>
 
 
