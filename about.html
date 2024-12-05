@@ -64,75 +64,76 @@
       </div>
       <div class="eventGrid" id="newsEvents">
         <!-- single item -->
-        <div
-          class="eventContainer"
-          style="background-image: url(images/pexels-koprivakart-3315961.jpg); height:30vh;"
-        >
-          <div class="overlay">
-            <div class="items"></div>
-            <div class="items head" style="font-size: large;">
-              <p>GOGO Skater in Olympics</p>
-              <hr />
-            </div>
-            <div>
-              <p class="desc">[EVENT DESCRIPTION]</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- single item -->
-        <div
-          class="eventContainer"
-          style="background-image: url(images/pexels-cottonbro-10131805.jpg); height:30vh;"
-        >
-          <div class="overlay">
-            <div class="items"></div>
-            <div class="items head" style="font-size: large;">
-              <p>Safe Wheels Workshop</p>
-              <hr />
-            </div>
-            <div>
-              <p class="desc">[EVENT DESCRIPTION]</p>
+          <div
+            class="eventContainer"
+            style="background-image: url(images/pexels-koprivakart-3315961.jpg); height:30vh;"
+          >
+            <div class="overlay">
+              <div class="items"></div>
+              <div class="items head" style="font-size: large;">
+                <p>GOGO Skater in Olympics</p>
+                <hr />
+              </div>
+              <div>
+                <p class="desc">[EVENT DESCRIPTION]</p>
+              </div>
             </div>
           </div>
-        </div>
 
-        <!-- single item -->
-        <div
-          class="eventContainer"
-          style="background-image: url(images/pexels-greg-melow-414051575-15026027.jpg); height:30vh;"
-        >
-          <div class="overlay">
-            <div class="items"></div>
-            <div class="items head" style="font-size: large;">
-              <p>Technique and Tricks Workshop</p>
-              <hr />
-            </div>
-            <div>
-              <p class="desc">[EVENT DESCRIPTION]</p>
+          <!-- single item -->
+          <div
+            class="eventContainer"
+            style="background-image: url(images/pexels-cottonbro-10131805.jpg); height:30vh;"
+          >
+            <div class="overlay">
+              <div class="items"></div>
+              <div class="items head" style="font-size: large;">
+                <p>Safe Wheels Workshop</p>
+                <hr />
+              </div>
+              <div>
+                <p class="desc">[EVENT DESCRIPTION]</p>
+              </div>
             </div>
           </div>
-        </div>
 
-        <!-- single item -->
-        <div
-          class="eventContainer"
-          style="background-image: url(images/pexels-felicity-tai-7951909.jpg); height:30vh;"
-        >
-          <div class="overlay">
-            <div class="items"></div>
-            <div class="items head" style="font-size: large;">
-              <p>Skate and Create: Art Meets Skating</p>
-              <hr />
-            </div>
-            <div>
-              <p class="desc">[EVENT DESCRIPTION]</p>
+          <!-- single item -->
+          <div
+            class="eventContainer"
+            style="background-image: url(images/pexels-greg-melow-414051575-15026027.jpg); height:30vh;"
+          >
+            <div class="overlay">
+              <div class="items"></div>
+              <div class="items head" style="font-size: large;">
+                <p>Technique and Tricks Workshop</p>
+                <hr />
+              </div>
+              <div>
+                <p class="desc">[EVENT DESCRIPTION]</p>
+              </div>
             </div>
           </div>
-        </div>
 
-          <!-- end of news cards -->
+          <!-- single item -->
+          <div
+            class="eventContainer"
+            style="background-image: url(images/pexels-felicity-tai-7951909.jpg); height:30vh;"
+          >
+            <div class="overlay">
+              <div class="items"></div>
+              <div class="items head" style="font-size: large;">
+                <p>Skate and Create: Art Meets Skating</p>
+                <hr />
+              </div>
+              <div>
+                <p class="desc">[EVENT DESCRIPTION]</p>
+              </div>
+            </div>
+          </div>
+
+            <!-- end of news cards -->
         </div>
+    
       </div>
       <div class="infoCard">
         <h2>FAQs</h2>
@@ -152,4 +153,37 @@
       <p>Connect with Us!</p>
     </footer>
   </body>
+  <script>
+  
+    let app = Vue.createApp({
+      data() {
+        return {
+          activePage: 0,
+          pages: [
+            {
+              link: { text: "Home", url: "index.html" }
+            },
+            {
+              link: { text: "About", url: "about.html" }
+            },
+            {
+              link: { text: "Events", url: "events.html" }
+            },
+            {
+              link: { text: "Gallery", url: "gallery.html" }
+            },
+            {
+              link: { text: "Our Sponsors", url: "sponsors.html" }
+              
+            },
+          ],
+    
+        };
+      },
+    
+    });
+    
+      app.mount("body");
+    </script>
+    
 </html>
