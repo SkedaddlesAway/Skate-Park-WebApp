@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Event Gallery</title>
+    <script src="https://unpkg.com/vue@3.0.2"></script>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <script async src="js/script.js"></script>
+</head>
+<body>
+  <div class="banner">
+    <nav class="nav">
+      <div class="logo">
+        <a href="index.html"><img class="logo" src="images/Art/logogo-txt-white.png"/></a>
+      </div>
+      <ul>
+        <li v-for="(page, index) in pages" :key="index">
+          <a
+            class="navLinks"
+            :class="{active: activePage == index}"
+            :href="page.link.url"
+            :title="'This link goes to the ${page.link.text} page'"
+            @click="window.location.href = page.link.url"
+            >{{page.link.text}}</a
+          >
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="pageTitle"> 
+    <!-- Page Title -->
+    <header>Photo Gallery</header>
+  </div>
+  <section class="content">
+    <h2>THE PARK</h2>
+    <div class="gallery">  
+      <img src="images/Revit/court.png" title="TITLE 3">
+      <img src="images/Revit/camera.png" title="TITLE 3">
+      <img src="images/Revit/littlePit.png" title="TITLE 3">
+      <img src="images/Revit/interPit.png" title="TITLE 3">
+      <img src="images/Revit/PROPIT.png" title="TITLE 3">
+    </div>
+    <H2>GOGO ART</H2>
+    <div class="gallery">
+      <img src="images/Art/aravil-apples.png" title="TITLE 1">
+      <img src="images/Art/GOGO GRAFFITI.png" title="TITLE 2">
+      <img src="images/Art/logogo-lineart.png" title="TITLE 3">
+      <img src="images/Art/gogolittleones.png" title="TITLE 3">
+      <img src="images/yes-gogo.png" title="TITLE 3">
+      <img src="images/Art/merchshop.png" title="TITLE 3">
+      <img src="images/Art/office.png" title="TITLE 3">
+      <img src="images/IMG_9816.PNG" title="TITLE 3">
+
+
+    </div>
+    <h2>EVENT PHOTOS</h2>
+    <div class="gallery">
+      <img src="images/pexels-zachtheshoota-1769553.jpg" title="TITLE 3">
+      <img src="images/pexels-greg-melow-414051575-15026027.jpg" title="TITLE 3">
+      <img src="images/pexels-koprivakart-3315961.jpg" title="TITLE 3">
+      <img src="images/gallery.jpg" title="TITLE 3">
+      <img src="images/pexels-cottonbro-10131805.jpg" title="TITLE 3">
+    </div>
+    
+  </section>
+  <footer>
+    <p>&copy; 2024 Company Name. All rights reserved.</p>
+  </footer>
+</body>
+</html>

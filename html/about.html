@@ -6,20 +6,26 @@
     <title>GoGo's Skate Park</title>
     <link rel="stylesheet" href="css/style.css" />
     <script async src="js/script.js"></script>
+    <script src="https://unpkg.com/vue@3.0.2"></script>
+
   </head>
   <body>
     <div class="banner">
-      <!-- Navigation Banner, holds hyperlinks for site tabs -->
       <nav class="nav">
         <div class="logo">
-          <a href="index.html"><img class="logo" src="images/Art/logogo-txt-white.png" /></a>
+          <a href="index.html"><img class="logo" src="images/Art/logogo-txt-white.png"/></a>
         </div>
-        <ul name="nav">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="events.html">Events</a></li>
-          <li><a href="gallery.html">Gallery</a></li>
-          <li><a href="sponsors.html">Our Sponsors</a></li>
+        <ul>
+          <li v-for="(page, index) in pages" :key="index">
+            <a
+              class="navLinks"
+              :class="{active: activePage == index}"
+              :href="page.link.url"
+              :title="'This link goes to the ${page.link.text} page'"
+              @click="window.location.href = page.link.url"
+              >{{page.link.text}}</a
+            >
+          </li>
         </ul>
       </nav>
     </div>
@@ -125,9 +131,9 @@
           </div>
         </div>
 
-        <!-- end of event cards -->
+          <!-- end of news cards -->
+        </div>
       </div>
-      
       <div class="infoCard">
         <h2>FAQs</h2>
         <p>

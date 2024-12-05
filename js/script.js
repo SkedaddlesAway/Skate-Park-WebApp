@@ -1,20 +1,30 @@
-const app = Vue.createApp({
-// data, functions, or events go here
-// simple single line component templates go here  
-// ie: template: '<h2>i am the template</h2>'
+import {createApp} from 'vue';
 
-  data(){ //define function
-    return{ //return object inside function
-        title: 'The Final Empire',
-        age: 45
-    }
+let app = Vue.createApp({
+  data() {
+    return {
+      activePage: 0,
+      pages: [
+        {
+          link: { text: "Home", url: "index.html" }
+        },
+        {
+          link: { text: "About", url: "about.html" }
+        },
+        {
+          link: { text: "Events", url: "events.html" }
+        },
+        {
+          link: { text: "Gallery", url: "gallery.html" }
+        },
+        {
+          link: { text: "Our Sponsors", url: "sponsors.html" }
+          
+        },
+      ],
+      
+    };
   },
-  methods:{
-    changeTitle(){
-        console.log ('clicked!')
-        this.title = 'words'
-    }
-  }
-})
+});
 
-app.mount('#app') //mount app to element with id 'app
+app.mount("body");
