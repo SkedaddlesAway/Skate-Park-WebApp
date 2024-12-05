@@ -43,13 +43,15 @@
         they do at GoGo's</p>
      </div>
 
-     <div class="sponsor-card">
-      <img src="" alt="">
+     <div v-for="sponsors in sponsors" class="sponsor-card">
+      <img :src= sponsors.img alt="">
       <div class="sponsor-title">
-        <h3></h3>
-        <p></p>
+        <h2>{{sponsors.name}}</h2>
+        <p>{{sponsors.desc}}</p>
       </div>
+      <hr>
      </div>
+
     </section>
     <footer>
       <p>Connect with Us!</p>
@@ -61,6 +63,23 @@
       data() {
         return {
           activePage: 0,
+          sponsors:[
+            {
+              name: "Blick Art Materials", img:"images/Blick.png", desc:"Blick is a team full of friendly and welcoming artists knowledgeable in all areas of art supplies. They proudly work with local artists and arts organizations across the country, and support a variety of national events as well as local community events." 
+            },
+            {
+              name: "Sol Skate Tech", img:"images/solskate.png", desc:"Sol Skate is a miami based skate tech company, leading the charge for free skateboards nationwide." 
+            },
+            {
+              name: "Orangatang", img:"images/Orangatang.png", desc:"Orangatang Wheels was hatched in 2008 as a means of advocating for the civil liberties of the indigenous river capybaras of Southern California. They also gained international praise in 2009 for their brief and completely unrelated foray into exotic animal jerky manufacturing and wholesale." 
+            },
+            {
+              name: "Bones Bearings", img:"images/BonesBearings.png", desc:"Bones Swiss Skateboard Bearings have the best reputation in the skateboard industry and have had this honor since 1981, due to their performance and quality. Everyone who rides Swiss knows how fast they are and how long they last." 
+            },
+            {
+              name: "DGK", img:"images/DGK.png", desc:" Dirty Ghetto Kids (DGK) is a skateboard brand founded by Stevie Williams and Troy Morgan in 2009. It features skateboarders such as Josh Kalis, Rodrigo Teixeira, and Fabian Alomar, and produces skateboards and apparel. " 
+            },
+          ],
           pages: [
             {
               link: { text: "Home", url: "index.html" }
@@ -80,11 +99,6 @@
             },
           ],
 
-          events:[
-            {
-              
-            }
-            ],
         };
       },
     
